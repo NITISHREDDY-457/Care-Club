@@ -37,9 +37,13 @@
                         @if(Route::is('home.albums')) active @endif" aria-current="page" href="{{ route('home.albums') }}" href="{{ route('home.albums') }}">Gallery</a>
                     <a class="nav-link fw-bold py-1 px-0
                         @if(Route::is('home.contact')) active @endif" aria-current="page" href="{{ route('home.contact') }}" href="{{ route('home.contact') }}">Contact</a>
-                    <a class="nav-link border rounded px-2 py-1 ms-3" href="https://github.com/souravdutt/donation" target="_blank">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
+                        <a class="nav-link border rounded px-2 py-1 ms-3" href="https://www.instagram.com/careclub_foundation_07/" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i> 
+                        </a>
+                        <a class="nav-link border rounded px-2 py-1 ms-3" href="https://youtu.be/wmE8BaxMYp0" target="_blank">
+                            <i class="fab fa-youtube fa-lg"></i> 
+                        </a>
+                        
                 </nav>
             </div>
         </header>

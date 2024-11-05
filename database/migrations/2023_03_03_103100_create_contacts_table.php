@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('email');
             $table->string('mobile');
             $table->text('message');
+            $table->string('donation_type')->nullable();
+            $table->string('location')->nullable();
+            $table->date('birthday_date')->nullable();
+            $table->json('food_items')->nullable(); // Using JSON to store multiple food items
             $table->timestamps();
         });
     }

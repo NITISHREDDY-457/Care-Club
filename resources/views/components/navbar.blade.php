@@ -28,7 +28,17 @@
                     <a class="nav-link border rounded px-2 py-1 mt-1 ms-2 bg-light text-danger" href="https://www.instagram.com/careclub_foundation_07/" target="_blank">
                         <i class="fab fa-instagram fa-lg "></i>
                     </a>
+                    
+                    
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link border rounded px-2 py-1 ms-3" href="https://youtu.be/wmE8BaxMYp0" target="_blank">
+                        <i class="fab fa-youtube fa-lg"></i>
+                    </a>
+                    
+                    
+                </li>
+                
             </ul>
         </div>
     </div>

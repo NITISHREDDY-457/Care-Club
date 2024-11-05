@@ -7,6 +7,7 @@ use App\Http\Controllers\QueryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -94,6 +95,10 @@ Route::get('album/{id}', [HomeController::class, 'album'])->name('home.album');
 Route::get('privacy', [HomeController::class, 'privacy'])->name('home.privacy-policy');
 # Contact Form
 Route::post('contact', [HomeController::class, 'contactSubmit'])->name('home.contact.submit');
+
+
+Route::post('/contact/submit', [ContactController::class, 'submit'])->name('home.contact.submit');
+
 # Checkout
 Route::post('process-checkout', [CheckoutController::class, 'createSession'])->name('process.checkout');
 Route::get('payment-success', [CheckoutController::class, 'paymentSuccess'])->name('stripe.success');
