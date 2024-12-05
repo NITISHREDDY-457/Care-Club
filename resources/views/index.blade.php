@@ -43,6 +43,11 @@
                         <a class="nav-link border rounded px-2 py-1 ms-3" href="https://youtu.be/wmE8BaxMYp0" target="_blank">
                             <i class="fab fa-youtube fa-lg"></i> 
                         </a>
+                    <!-- Logout Button -->
+                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-light ms-3">Logout</button>
+                    </form>
                         
                 </nav>
             </div>
