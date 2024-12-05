@@ -38,6 +38,17 @@
                     
                     
                 </li>
+                <!-- Logout Button -->
+                @auth
+                <li class="nav-item">
+                    <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                        @csrf
+                        <button type="submit" class="btn btn-outline-danger ms-2">
+                            Logout
+                        </button>
+                    </form>
+                </li>
+                @endauth
                 
             </ul>
         </div>
