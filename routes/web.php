@@ -38,6 +38,13 @@ Route::prefix('admin')->middleware('guest')->group(function () {
 /****************************/
 
 
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/signup', [AuthController::class, 'showSignupForm'])->name('signup');
+Route::post('/signup', [AuthController::class, 'signup']);
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
 
 /*****************************/
 /***** ADMIN AUTH START ******/
